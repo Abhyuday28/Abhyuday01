@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome/Login-page</title>
+    <link rel="stylesheet" href="Design.css">
+
+    <link  href="http://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">   <!---- Font-family taken from Google-font----->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.css" integrity="sha512-72McA95q/YhjwmWFMGe8RI3aZIMCTJWPBbV8iQY3jy1z9+bi6+jHnERuNrDPo/WGYEzzNs4WdHNyyEr/yXJ9pA==" crossorigin="anonymous" referrerpolicy="no-referrer" />   <!----for star rating, taken from font awesome 5 cdn----->
+</head>
+<body>
+    <div class="header">     <!---- header of website----->
+    <div class="container">
+    <div class="navbar">   <!---- nevbar of website----->
+        <div class="logo">
+            <a href="e-commerce02.html"><img src="image/AWESOME-web_image/awesome-logo(E).png" alt="logo" height="66px"></a>
+
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="e-commerce02.html">Home</a></li>
+                <li><a href="products02.html">Product</a></li>
+                <li><a href="login-page.html">Account</a></li>
+                <li><a href="">Help</a></li>
+                <li><a href="myInfo.html">About</a></li>
+                <li class="bag"><a href="Cart.html"><img src="image/shopping-bag.png" width="30px" height="30px"></a></li>
+            </ul>
+        </nav>
+       <!-- <img src="image/shopping-bag.png" width="30px" height="30px"> -->
+       <img src="image/icons8-menu-50.png" class="menu-icon" oneclick="menutoggle()">   <!----menu for responsiveness----->
+    </div>
+</div>
+
+<!-- -------login-page------- -->
+
+<div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+              <img src="image/AWESOME-web_image/header-man__2_-removebg-preview.png" width="100%">
+            </div>
+            <div class="col-2">
+              <div class="form-container">
+<div class="form-btn">
+    <span onclick="login()">Login</span>
+    <span onclick="register()">Register</span>
+    <hr id="indicator">
+</div>
+
+
+<form id="loginform">
+    <input type="text" placeholder="Username">
+    <input type="password"  placeholder="password">
+    <button type="submit" class="btn">Login</button>
+    <a href="">*Forgot password</a>
+</form>
+
+<form id="regform">
+    <input type="text" placeholder="Username">
+    <input type="email"  placeholder="email">
+    <input type="password"  placeholder="password">
+    <button type="submit" class="btn">Register</button>
+</form>
+
+
+              </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!------ footer ------>
+
+
+<div class="footer" class="footer-account">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download App</h3>
+                <p>Download our app for Android and iOS.</p>
+                <div class="app-logo">
+                    <img src="image/google-play-store-logo.png" alt="GooglePlay">
+                    <img src="image/the-app-store-flat-badge-logo.png" alt="AppStore">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="Image/AWESOME-web_image/awesome-logo(E).png" alt="">
+                <p>"Style is a way to say who you are without having to speak."</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog post</li>
+                    <li>Return Policy </li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Twitter </li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2022-25 - AbD</p>
+    </div>
+</div>
+
+
+<!-- -- js for toggle menu -- -->
+
+
+<script>
+    var MenuItems=document.getElementById("MenuItems");
+    MenuItems.style.maxHeight="0px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight="0px"){
+            MenuItems.style.maxHeight="200px";
+        }
+        else{
+            MenuItems.style.maxHeight="0px";
+        }
+    }
+</script> 
+
+
+<!-- js for toggle form -->
+
+
+<script>
+    var loginform = document.getElementById("loginform");
+    var regform = document.getElementById("regform");
+    var indicator= document.getElementById("indicator");
+
+    function register(){
+        regform.style.transform ="translateX(0px)"
+        loginform.style.transform ="translateX(0px)"
+        indicator.style.transform ="translateX(100px)"
+    }
+    function login(){
+        regform.style.transform ="translateX(300px)"
+        loginform.style.transform ="translateX(300px)"
+        indicator.style.transform ="translateX(0px)"
+    }
+</script>
+</body>
+</html>
