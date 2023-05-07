@@ -1,0 +1,33 @@
+.col1 img{
+width: 35%;
+}
+.col1{
+    align-items: center;
+    margin-left:40%;
+   font-size: 110%;
+   font-family: cursive;
+   
+   
+}
+.col2{
+    align-items: center;
+    margin-left:40%;
+    font-size: 110%;
+    font-family: cursive;
+}
+.col3{
+    align-items: center;
+    margin-left:40%;
+    font-size: 110%;
+   font-family: cursive;
+   
+}
+.col4{
+    align-items: center;
+    margin-left:40%;
+    font-size: 110%;
+   font-family: cursive;
+}
+.col4 img{
+    width: 35%;
+    }

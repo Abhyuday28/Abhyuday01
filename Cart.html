@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome/Products</title>
+    <link rel="stylesheet" href="Design.css">
+
+    <link  href="http://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">   <!---- Font-family taken from Google-font----->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.css" integrity="sha512-72McA95q/YhjwmWFMGe8RI3aZIMCTJWPBbV8iQY3jy1z9+bi6+jHnERuNrDPo/WGYEzzNs4WdHNyyEr/yXJ9pA==" crossorigin="anonymous" referrerpolicy="no-referrer" />   <!----for star rating, taken from font awesome 5 cdn----->
+</head>
+<body>
+    
+    <div class="container">
+    <div class="navbar">   <!---- nevbar of website----->
+        <div class="logo">
+            <a href="e-commerce02.html"><img src="image/AWESOME-web_image/awesome-logo(E).png" alt="logo" height="66px"></a>
+        </div>
+        <nav>
+            <ul id="MenuItems" class="list">
+                <li><a href="e-commerce02.html">Home</a></li>
+                <li><a href="products02.html">Product</a></li>
+                <li><a href="login-page.html">Account</a></li>
+                <li><a href="">Help</a></li>
+                <li><a href="myInfo.html">About</a></li>
+                <li class="bag"><a href=""><img src="image/shopping-bag.png" width="30px" height="30px"></a></li>
+            </ul>
+        </nav>
+       <!-- <img src="image/shopping-bag.png" width="30px" height="30px"> -->
+       <img src="image/icons8-menu-50.png" class="menu-icon" oneclick="menutoggle()">   <!----menu for responsiveness----->
+    </div>
+</div> 
+
+
+
+<!-- ------------------cart------------------- -->
+
+<div class="small-container cart-page">
+<table>
+    <tr>
+        <th>Product</th>
+        <th>Quantity</th>
+        <th>Subtotal</th>
+    </tr>
+    <tr>
+    <td>
+        <div class="cart-info">
+        <img src="image/AWESOME-web_image/biker jacket.jpg" alt="">
+    </div>
+<p>Biker Jacket</p>
+<small>Price : 1244 Rs </small>
+<br>
+<a href="">remove</a>
+</div>
+</div>
+</td>
+<td><input type="number" value="1"></td>
+<td>1279 Rs</td>
+</tr>
+    <tr>
+    <td>
+        <div class="cart-info">
+        <img src="image/AWESOME-web_image/mens kurta/IMG-20220221-WA0033.jpg" alt="">
+    </div>
+<p>Wedding kurta</p>
+<small>Price : 1799 Rs </small>
+<br>
+<a href="">remove</a>
+</div>
+</div>
+</td>
+<td><input type="number" value="1"></td>
+<td>1799 Rs</td>
+</tr>
+    <tr>
+    <td>
+        <div class="cart-info">
+        <img src="image/AWESOME-web_image/mens kurta/IMG-20220224-WA0005-removebg-preview.png" alt="">
+    </div>
+<p>Traditional-Kurta</p>
+<small>Price : 1950 Rs </small>
+<br>
+<a href="">remove</a>
+</div>
+</div>
+</td>
+<td><input type="number" value="1"></td>
+<td>1950 Rs</td>
+</tr>
+</table>
+<div class="total-price">
+    <table>
+        <tr>
+            <td>Subtotal</td>
+            <td>4993 Rs</td>
+        </tr>
+        <tr>
+            <td>Tax</td>
+            <td>78 Rs</td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td>5071 Rs</td>
+        </tr>
+    </table>
+</div>
+</div>
+
+
+<!---- js for toggle menu ---->
+
+
+<script>
+    var MenuItems = document.getElementById('MenuItems');
+    MenuItems.style.maxHeight=='0px';
+    function menutoggle(){
+        if(MenuItems.style.maxHeight=='0px')
+        {
+            MenuItems.style.maxHeight='200px';
+        }
+        else{
+            MenuItems.style.maxHeight=='0px';
+        }
+    }
+</script>
+
+
+
+<!------ footer ------>
+
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download App</h3>
+                <p>Download our app for Android and iOS.</p>
+                <div class="app-logo">
+                    <img src="image/google-play-store-logo.png" alt="GooglePlay">
+                    <img src="image/the-app-store-flat-badge-logo.png" alt="AppStore">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="Image/AWESOME-web_image/awesome-logo(E).png" alt="">
+                <p>"Fashion is like eating, you shouldn't stick to the same menu."</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog post</li>
+                    <li>Return Policy </li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Twitter </li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2022-25 - AbD</p>
+    </div>
+</div>
+

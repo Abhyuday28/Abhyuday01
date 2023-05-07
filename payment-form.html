@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" method="get">
+            <h1>Payment form</h1>
+            <hr>
+            <h6><i>* means required field</i> </h6>
+            <fieldset>
+            <legend><h2>User information</h2></legend>
+            
+            <p>Name *:<input type="text" required name="name" placeholder="Shivam kumar">
+            </p>
+            
+          <fieldset><legend>Gender:</legend> 
+            <p>
+                Male <input type="radio" name="gender" id="Male">
+                Female <input type="radio" name="gender" id="Female">
+            </p>
+          </fieldset>
+            <p>
+                Email *:
+                <input type="email" required name="email" id="email" required placeholder="Asdf2022@gmail.com">
+            </p>
+            <p>
+                Address:
+                <textarea name="address" id="address"></textarea>
+                </p>
+                <p>
+                Pincode: <input type="number" name="pincode" id="pincode">
+            </p>
+            
+        </fieldset>
+        <hr>
+            <fieldset class="pay"> 
+            <legend><h2>Payment Information *</h2></legend> 
+            <p>Card type: </p>
+            <select required name="card_type" id="card_type">
+                <option value="">-----Select a card card type-----</option>
+                <option value="Visa">Visa</option>
+                <option value="Mastercard">Mastercard</option>
+                <option value="Rupay">Rupay</option>
+            </select>
+            <p>Card Number: <input type="number" required name="card_number" id="card_number"> </p>
+            <p>Expiration: <input type="month" required name="expiration" id="expiration"></p>
+            <p>CVV: <input type="password" required name="cvv" id="cvv"></p>
+            
+        </fieldset>
+        <div class = "submit">
+            <input type="submit" value="Pay Now">
+        </div>
+        </form>
+    </div>
+</body>
+</html>

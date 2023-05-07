@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    
+}
+.one{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(Image/unknown.png);
+    background-position: center;
+    background-size: cover;
+    padding: 10px 10%;
+    overflow: hidden;
+    position: relative;
+}
+nav{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.logo{
+    width: 140px;;
+}
+a{
+    color: white;
+}
+nav ul li{
+    display: inline-block;
+    list-style:none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(167, 206, 241);
+    font-weight: 400;
+}
+.login-btn{
+    text-decoration: none;
+    color: rgb(167, 206, 241);
+    margin-right: 15px;
+    font-weight: 400;
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 40px;
+    color: #fff;
+    background-image: linear-gradient(45deg,rgb(72, 69, 72),rgb(230, 229, 225));
+    font-size: 14px;
+    border-radius: 40px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+    transition: 0.5s;
+}
+.btn01{
+    background-image: linear-gradient(45deg,rgb(66, 66, 67),rgb(182, 183, 185));
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 40px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 40px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+    transition: 0.5s;
+}
+.content{
+    margin-top: 10%;
+    max-width: 600px;
+}
+.content h1{
+    font-size: 70px;
+    color: rgb(178, 171, 171);
+    text-shadow: 1px 1px 2px rgb(79, 74, 75);
+}
+.content p{
+    margin: 10px 0 20px;
+    color: rgb(255, 255, 255);
+    animation-delay: 0.5s;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+}
+.content .btn01{
+    padding: 15px 80px;
+    font-size: 16px;
+    animation-delay: 0.8s;
+}
+.btn:hover{
+    border-radius: 30px;
+}
+.btn01:hover{
+    border-radius: 30px;
+}
+.feature-img{
+    width: 550px;
+    position: absolute;
+    bottom: 20%;
+    right: 15%;
+    border-radius: 30px;
+    box-shadow: white 3px 1px 7px;
+}
+.feature-img.anime{
+    animation-delay: 1.5s;
+}
+
+
+.anime{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
